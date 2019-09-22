@@ -1,0 +1,27 @@
+{
+	"name": "nusa/workflow-experiments",
+	"description": "Testing team's workflow and CI",
+	"authors": [
+	  {
+		"name": "Mike Estrada",
+		"email": "mestrada@nu.edu",
+		"role": "developer"
+	  }
+	],
+	"repositories":[
+	  {
+		"type":"composer",
+		"url":"https://wpackagist.org"
+	  }
+	],
+	"require": {
+	  "wp-premium/gravityforms": "2.4.11",
+	  "wpackagist-plugin/wordpress-seo":"*"
+	},
+	"extra": {
+	  "installer-paths": {
+		"plugins/{$name}/": ["type:wordpress-plugin"],
+		"themes/{$name}/": ["type:wordpress-theme"]
+	  }
+	}
+  }
