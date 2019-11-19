@@ -6,11 +6,11 @@
  * Author: Mike Estrada
  */
 
-// Broken comment for the code sniffer to find
+// Broken comment for the code sniffer to find errors
 $variable_name = '';
 
 if ( $variable_name == '' ) {
 	$variable_name = 'test';
-} else if ( 'hello' == $variable_name ) {
+} else if ( $variable_name == 'hello' ) {
 	$variable_name = 'hello world';
 }
