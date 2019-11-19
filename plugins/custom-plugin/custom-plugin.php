@@ -11,4 +11,6 @@ $variable_name = '';
 
 if ( $variable_name == '' ) {
 	$variable_name = 'test';
+} else if ( 'hello' == $variable_name ) {
+	$variable_name = 'hello world';
 }
