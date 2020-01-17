@@ -4,8 +4,8 @@ on:
     branches:
       - master
 jobs:
-  eslint:
-    name: lint / eslint
+  linters:
+    name: linters
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -14,3 +14,9 @@ jobs:
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
+      - name: stylelint
+        uses: reviewdog/action-stylelint@v1
+        with:
+          github_token: ${{ secrets.github_token }}
+          reporter: github-pr-review
+          stylelint_input: '**/*.scss'
